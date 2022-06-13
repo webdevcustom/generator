@@ -1,0 +1,151 @@
+@import url("null.css");
+body {
+	color: #222;
+	font-weight: 400;
+	background: #fff;
+	font-size: 15px;
+}
+.wrapper {
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+}
+._container {
+	max-width: 500px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 0 15px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding: 25px 10px;
+}
+.gen {
+	margin-bottom: 20px;
+}
+.gen__title {
+	font-size: 32px;
+	font-weight: bold;
+	margin: 0px 0px 30px 0px;
+	line-height: 1.5;
+}
+.gen__holder {
+}
+.gen__text {
+	margin: 0px 0px 30px 0px;
+}
+.gen__text p {
+	margin: 0px 0px 10px 0px;
+	line-height: 1.5;
+}
+.gen__controls {
+	display: flex;
+	justify-content: space-between;
+}
+.gen__btn {
+	min-width: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 50px;
+	line-height: 1.2;
+	background: none;
+	color: #fc0000d3;
+	font-size: 18px;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 15px;
+	border: 1px solid #fc0000d3;
+	padding: 10px 15px;
+	transition: all 0.3s ease 0s;
+}
+@media (min-width: 992px) {
+	.gen__btn:hover {
+		background: #fc0000d3;
+		color: #fff;
+	}
+}
+
+.anim {
+	-webkit-animation-name: rubberBand;
+	animation-name: rubberBand;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+}
+@-webkit-keyframes rubberBand {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes rubberBand {
+	0% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+	30% {
+		-webkit-transform: scale3d(1.25, 0.75, 1);
+		transform: scale3d(1.25, 0.75, 1);
+	}
+	40% {
+		-webkit-transform: scale3d(0.75, 1.25, 1);
+		transform: scale3d(0.75, 1.25, 1);
+	}
+	50% {
+		-webkit-transform: scale3d(1.15, 0.85, 1);
+		transform: scale3d(1.15, 0.85, 1);
+	}
+	65% {
+		-webkit-transform: scale3d(0.95, 1.05, 1);
+		transform: scale3d(0.95, 1.05, 1);
+	}
+	75% {
+		-webkit-transform: scale3d(1.05, 0.95, 1);
+		transform: scale3d(1.05, 0.95, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+.about__text {
+	font-size: 10px;
+	color: rgb(207, 207, 207);
+	line-height: 1.1;
+}
+.about__text:not(:last-child) {
+	margin: 0px 0px 10px 0px;
+}
